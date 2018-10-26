@@ -20,8 +20,8 @@ public class MaquinaExpendedoraSimple {
         precioBillete = precioDelBillete;
         balanceClienteActual = 0;
         totalDineroAcumulado = 0;
-        estacionOrigen = "León";
-        estacionDestino = "Madrid";
+        estacionOrigen = "Leon";
+        estacionDestino = destino;
     }
 
     /**
@@ -45,6 +45,13 @@ public class MaquinaExpendedoraSimple {
         balanceClienteActual = balanceClienteActual + cantidadIntroducida;
     }
 
+    /**
+     * El total de dinero almacenado en la maquina desde su ultimo vaciado
+     */
+    public int getTotalDineroAcumulado() {
+        return balanceClienteActual;
+    }
+    
     /**
      * Imprime un billete para el cliente actual
      */
