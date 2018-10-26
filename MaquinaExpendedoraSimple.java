@@ -52,6 +52,14 @@ public class MaquinaExpendedoraSimple {
         precioBillete = costeBillete;
         return precioBillete;
     }
+    
+    /**
+     * Precio con descuento
+     */
+    public int setDescuentoPrecio(int descuento) {
+        precioBillete = precioBillete - descuento;
+        return precioBillete;
+    }
 
     /**
      * El total de dinero almacenado en la maquina desde su ultimo vaciado
