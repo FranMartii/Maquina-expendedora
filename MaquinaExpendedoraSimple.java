@@ -60,12 +60,20 @@ public class MaquinaExpendedoraSimple {
         precioBillete = precioBillete - descuento;
         return precioBillete;
     }
+    
+     /**
+     * Vaciado de deposito
+     */
+    public void vaciarDepositoDinero () {
+        totalDineroAcumulado = 0;
+    }
 
     /**
      * El total de dinero almacenado en la maquina desde su ultimo vaciado
      */
     public int getTotalDineroAcumulado() {
-        return balanceClienteActual;
+        
+        return totalDineroAcumulado;
     }
     
     /**
