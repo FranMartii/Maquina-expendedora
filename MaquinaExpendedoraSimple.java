@@ -44,6 +44,14 @@ public class MaquinaExpendedoraSimple {
     public void introducirDinero(int cantidadIntroducida) {
         balanceClienteActual = balanceClienteActual + cantidadIntroducida;
     }
+    
+    /**
+     * Cambia precio billete
+     */
+    public int setCambiarPrecio(int costeBillete) {
+        precioBillete = costeBillete;
+        return precioBillete;
+    }
 
     /**
      * El total de dinero almacenado en la maquina desde su ultimo vaciado
